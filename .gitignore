@@ -1,0 +1,5 @@
+exp_results
+__pycache__
+*debug*
+.DS_Store
+Thumbs.db
