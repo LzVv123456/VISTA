@@ -4,11 +4,11 @@
 CUDA_VISIBLE_DEVICES=0 \
 python chair_eval.py \
 --model "llava-1.5" \
---data-path 'PATH TO COCO_2014' \
+--data-path 'YOUR_PATH_TO_COCO' \
 --vsv \
---lamda 0.1 \
---logits_aug \
---logits_alpha 0.3 \
+--vsv-lambda 0.1 \
+--logits-aug \
+--logits-alpha 0.3 \
 
 
 # # read the result file

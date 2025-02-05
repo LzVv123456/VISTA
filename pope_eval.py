@@ -28,13 +28,13 @@ def parse_args():
 
     # Visual steering vector arguments
     parser.add_argument("--vsv", action="store_true", help='Use visual steering vector')
-    parser.add_argument("--lamda", type=float, default=0.01)
+    parser.add_argument("--vsv-lambda", type=float, default=0.01)
     parser.add_argument("--layers", default=None)
 
     # penultimate logits augmentation
-    parser.add_argument("--logits_aug", action="store_true", help='Use penultimate logits augmentation')
-    parser.add_argument("--logits_layers", type=str, default='25,30', help='Layer for penultimate logits augmentation')
-    parser.add_argument("--logits_alpha", type=float, default=0.3, help='Alpha for penultimate logits augmentation')
+    parser.add_argument("--logits-aug", action="store_true", help='Use penultimate logits augmentation')
+    parser.add_argument("--logits-layers", type=str, default='25,30', help='Layer for penultimate logits augmentation')
+    parser.add_argument("--logits-alpha", type=float, default=0.3, help='Alpha for penultimate logits augmentation')
 
     # Decoding arguments
     parser.add_argument("--max-new-tokens", type=int, default=32)
@@ -119,7 +119,7 @@ def main(args):
                     # generate visual steering vectors
                     visual_vector, _ = obtain_vsv(args, model_loader.llm_model, [[neg_kwargs, pos_kwargs]])
                     # add steering vectors
-                    add_vsv_layers(model_loader.llm_model, torch.stack([visual_vector], dim=1).cuda(), [args.lamda])
+                    add_vsv_layers(model_loader.llm_model, torch.stack([visual_vector], dim=1).cuda(), [args.vsv_lambda])
 
                 # add logits augmentation flag
                 add_logits_flag(model_loader.llm_model, args)

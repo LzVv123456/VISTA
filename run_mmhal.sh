@@ -5,9 +5,9 @@ CUDA_VISIBLE_DEVICES=0 \
 python mmhal_eval.py \
 --model "llava-1.5" \
 --vsv \
---lamda 0.1 \
---logits_aug \
---logits_alpha 0.3 \
+--vsv-lambda 0.1 \
+--logits-aug \
+--logits-alpha 0.3 \
 
 # # read the result file
 # python mmhal_ans.py \

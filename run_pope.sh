@@ -4,12 +4,12 @@
 CUDA_VISIBLE_DEVICES=0 \
 python pope_eval.py \
 --model "llava-1.5" \
---data-path 'path to coco val2014' \
+--data-path 'YOUR_PATH_TO_COCO' \
 --pope-type 'random' \
 --vsv \
---lamda 0.01 \
---logits_aug \
---logits_alpha 0.3 \
+--vsv-lambda 0.01 \
+--logits-aug \
+--logits-alpha 0.3 \
 
 
 # # read the result file

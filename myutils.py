@@ -43,7 +43,7 @@ def prepare_common_fileparts(args):
     # visual steering vector
     if args.vsv:
         file_parts.append("vsv")
-        file_parts.append(f"lamda_{args.lamda}")
+        file_parts.append(f"lambda_{args.vsv_lambda}")
         if args.layers is not None:
             file_parts.append(f"layers_{args.layers}")
     else:
