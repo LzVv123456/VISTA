@@ -1,6 +1,6 @@
 # VISTA: Visual Information Steering with Token-logit Augmentation
 
-[![arXiv](https://img.shields.io/badge/arXiv-2402.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2402.xxxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-2502.03628-b31b1b.svg)](https://arxiv.org/pdf/2502.03628)
 
 This is the official implementation of the paper "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models via Visual Information Steering".
 
@@ -73,18 +73,19 @@ Please check the corresponding bash script for how to read results.
 
 ## Citation
 ```bibtex
-@article{li2024hidden,
-  title={The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models via Visual Information Steering},
-  author={Li, Zhuowei and Shi, Haizhou and Gao, Yunhe and Liu, Di and Wang, Zhenting and Chen, Yuxiao and Liu, Ting and Zhao, Long and Wang, Hao and Metaxas, Dimitris N.},
-  journal={arXiv preprint arXiv:2402.xxxxx},
-  year={2024}
+@misc{li2025hiddenlifetokensreducing,
+      title={The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models via Visual Information Steering}, 
+      author={Zhuowei Li and Haizhou Shi and Yunhe Gao and Di Liu and Zhenting Wang and Yuxiao Chen and Ting Liu and Long Zhao and Hao Wang and Dimitris N. Metaxas},
+      year={2025},
+      eprint={2502.03628},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2502.03628}, 
 }
 ```
 
 ## Acknowledgement
-This project builds upon excellent work from:
+This project builds upon the following excellent works:
 - [PAI](https://github.com/LALBJ/PAI)
 - [ICV](https://github.com/shengliu66/ICV)
 - [OPERA](https://github.com/shikiw/OPERA)
-
-We'd like to extend our appreciation for these great works.
