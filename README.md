@@ -33,8 +33,8 @@ VISTA combines two complementary approaches:
 git clone https://github.com/LzVv123456/VISTA
 cd VISTA
 
-# Install dependencies
-pip install -r requirements.txt
+# Create and activate the virtual environment
+conda env create -f environment.yml
 ```
 
 ## Prepare Data

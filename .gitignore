@@ -3,3 +3,4 @@ __pycache__
 *debug*
 .DS_Store
 Thumbs.db
+requirements.txt
