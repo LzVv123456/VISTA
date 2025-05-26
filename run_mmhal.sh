@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# run chair eval
+# run mmhal eval
 CUDA_VISIBLE_DEVICES=0 \
 python mmhal_eval.py \
 --model "llava-1.5" \
