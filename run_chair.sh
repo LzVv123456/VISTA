@@ -12,4 +12,4 @@ python chair_eval.py \
 
 # # read the result file
 # python chair_ans.py \
-# --response 'PATH' \
+# --response 'path to result file' \
